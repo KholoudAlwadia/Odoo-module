@@ -42,8 +42,9 @@ custom models file path: (Odoo-module/odoo16latest/server/custom/hospital/)
 
 ## ScreenShots 
 
+https://user-images.githubusercontent.com/53967051/207138933-96b98644-7029-46d4-b634-0c4e93d18de8.mp4
 
-https://user-images.githubusercontent.com/53967051/207137396-7e138872-2c3b-4960-9810-92e9ea6e64f6.mp4
+
 
 
 
