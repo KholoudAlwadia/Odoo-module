@@ -1,0 +1,14 @@
+
+Installation Directory: C:\Users\khokha\odoo16latest\PostgreSQL
+Server Installation Directory: C:\Users\khokha\odoo16latest\PostgreSQL
+Data Directory: C:\Users\khokha\odoo16latest\PostgreSQL\data
+Database Port: 5432
+Database Superuser: odoo16
+Operating System Account: openpgsvc
+Database Service: PostgreSQL_For_Odoo
+Command Line Tools Installation Directory: C:\Users\khokha\odoo16latest\PostgreSQL
+pgAdmin4 Installation Directory: C:\Users\khokha\odoo16latest\PostgreSQL\pgAdmin 4
+Stack Builder Installation Directory: C:\Users\khokha\odoo16latest\PostgreSQL\stackbuilder
+
+===== Installation completed at: 2022-12-10(YYYY-MM-DD) - 20:20:21(HH:MM:SS) =====
+                            

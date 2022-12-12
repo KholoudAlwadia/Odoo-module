@@ -1,0 +1,221 @@
+2022-12-10 16:15:06,975 1236 INFO ? odoo: Odoo version 16.0-20221206 
+2022-12-10 16:15:06,975 1236 INFO ? odoo: Using configuration file at C:\Users\khokha\odoo16latest\server\odoo.conf 
+2022-12-10 16:15:06,975 1236 INFO ? odoo: addons paths: ['C:\\Users\\khokha\\odoo16latest\\server\\odoo\\addons', 'c:\\users\\khokha\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'c:\\users\\khokha\\odoo16latest\\server\\odoo\\addons'] 
+2022-12-10 16:15:06,975 1236 INFO ? odoo: database: odoo16@localhost:5432 
+2022-12-10 16:15:07,932 1236 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Users\khokha\odoo16latest\thirdparty\wkhtmltopdf.exe 
+2022-12-10 16:15:09,202 1236 INFO ? odoo.service.server: Initiating shutdown 
+2022-12-10 16:15:09,202 1236 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2022-12-10 16:15:11,272 11820 INFO ? odoo: Odoo version 16.0-20221206 
+2022-12-10 16:15:11,272 11820 INFO ? odoo: Using configuration file at C:\Users\khokha\odoo16latest\server\odoo.conf 
+2022-12-10 16:15:11,272 11820 INFO ? odoo: addons paths: ['C:\\Users\\khokha\\odoo16latest\\server\\odoo\\addons', 'c:\\users\\khokha\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'c:\\users\\khokha\\odoo16latest\\server\\odoo\\addons'] 
+2022-12-10 16:15:11,272 11820 INFO ? odoo: database: odoo16@localhost:5432 
+2022-12-10 16:15:11,476 11820 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Users\khokha\odoo16latest\thirdparty\wkhtmltopdf.exe 
+2022-12-10 16:15:11,821 11820 INFO ? odoo.service.server: HTTP service (werkzeug) running on Ginsoul:8069 
+2022-12-10 16:15:15,842 11820 INFO ? odoo.sql_db: Connection to the database failed 
+2022-12-10 16:15:19,873 11820 INFO ? odoo.sql_db: Connection to the database failed 
+2022-12-10 16:28:26,301 11820 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1987, in __call__
+    response = request._serve_nodb()
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1547, in _serve_nodb
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1722, in dispatch
+    return endpoint(**self.request.params)
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 698, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "C:\Users\khokha\odoo16latest\server\odoo\addons\web\controllers\home.py", line 32, in index
+    if request.session.uid and not is_user_internal(request.session.uid):
+  File "C:\Users\khokha\odoo16latest\server\odoo\addons\web\controllers\utils.py", line 204, in is_user_internal
+    return request.env['res.users'].browse(uid)._is_internal()
+TypeError: 'NoneType' object is not subscriptable
+2022-12-10 16:28:26,307 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 16:28:26] "GET / HTTP/1.1" 500 - 1 0.011 0.214
+2022-12-10 16:28:29,408 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 16:28:29] "GET /favicon.ico HTTP/1.1" 404 - 1 0.000 0.303
+2022-12-10 16:30:22,454 11820 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1987, in __call__
+    response = request._serve_nodb()
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1547, in _serve_nodb
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1722, in dispatch
+    return endpoint(**self.request.params)
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 698, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "C:\Users\khokha\odoo16latest\server\odoo\addons\web\controllers\home.py", line 32, in index
+    if request.session.uid and not is_user_internal(request.session.uid):
+  File "C:\Users\khokha\odoo16latest\server\odoo\addons\web\controllers\utils.py", line 204, in is_user_internal
+    return request.env['res.users'].browse(uid)._is_internal()
+TypeError: 'NoneType' object is not subscriptable
+2022-12-10 16:30:22,455 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 16:30:22] "GET / HTTP/1.1" 500 - 1 0.003 0.053
+2022-12-10 16:50:38,442 7252 INFO ? odoo: Odoo version 16.0-20221206 
+2022-12-10 16:50:38,442 7252 INFO ? odoo: Using configuration file at C:\Users\khokha\odoo16latest\server\odoo.conf 
+2022-12-10 16:50:38,442 7252 INFO ? odoo: addons paths: ['C:\\Users\\khokha\\odoo16latest\\server\\odoo\\addons', 'c:\\users\\khokha\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'c:\\users\\khokha\\odoo16latest\\server\\odoo\\addons'] 
+2022-12-10 16:50:38,442 7252 INFO ? odoo: database: odoo16@localhost:5432 
+2022-12-10 16:50:38,771 7252 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Users\khokha\odoo16latest\thirdparty\wkhtmltopdf.exe 
+2022-12-10 16:50:39,308 7252 INFO ? odoo.service.server: HTTP service (werkzeug) running on Ginsoul:8069 
+2022-12-10 16:53:22,118 7252 INFO ? odoo.service.server: Initiating shutdown 
+2022-12-10 16:53:22,118 7252 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2022-12-10 16:53:22,310 7252 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2022-12-10 16:53:36,938 11820 INFO ? odoo.sql_db: Connection to the database failed 
+2022-12-10 16:53:36,941 11820 ERROR odoo16 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Users\khokha\odoo16latest\server\odoo\modules\registry.py", line 65, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-6>", line 2, in __getitem__
+  File "C:\Users\khokha\odoo16latest\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Users\khokha\odoo16latest\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo16'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1557, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "C:\Users\khokha\odoo16latest\server\odoo\modules\registry.py", line 67, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-14>", line 2, in new
+  File "C:\Users\khokha\odoo16latest\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Users\khokha\odoo16latest\server\odoo\modules\registry.py", line 79, in new
+    registry.init(db_name)
+  File "C:\Users\khokha\odoo16latest\server\odoo\modules\registry.py", line 155, in init
+    with closing(self.cursor()) as cr:
+  File "C:\Users\khokha\odoo16latest\server\odoo\modules\registry.py", line 779, in cursor
+    return self._db.cursor()
+  File "C:\Users\khokha\odoo16latest\server\odoo\sql_db.py", line 691, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn)
+  File "C:\Users\khokha\odoo16latest\server\odoo\sql_db.py", line 259, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-2>", line 2, in borrow
+  File "C:\Users\khokha\odoo16latest\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Users\khokha\odoo16latest\server\odoo\sql_db.py", line 640, in borrow
+    **connection_info)
+  File "C:\Users\khokha\odoo16latest\python\lib\site-packages\psycopg2\__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "odoo16" does not exist
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1985, in __call__
+    response = request._serve_db()
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1572, in _serve_db
+    return self._serve_nodb()
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1547, in _serve_nodb
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1722, in dispatch
+    return endpoint(**self.request.params)
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 698, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "C:\Users\khokha\odoo16latest\server\odoo\addons\web\controllers\home.py", line 32, in index
+    if request.session.uid and not is_user_internal(request.session.uid):
+  File "C:\Users\khokha\odoo16latest\server\odoo\addons\web\controllers\utils.py", line 204, in is_user_internal
+    return request.env['res.users'].browse(uid)._is_internal()
+TypeError: 'NoneType' object is not subscriptable
+2022-12-10 16:53:36,968 11820 INFO odoo16 werkzeug: 192.168.100.10 - - [10/Dec/2022 16:53:36] "GET / HTTP/1.1" 500 - 0 0.000 0.108
+2022-12-10 16:53:37,950 11820 INFO ? werkzeug: 192.168.100.10 - - [10/Dec/2022 16:53:37] "GET /favicon.ico HTTP/1.1" 404 - 1 0.021 0.061
+2022-12-10 16:53:50,598 11820 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1987, in __call__
+    response = request._serve_nodb()
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1547, in _serve_nodb
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 1722, in dispatch
+    return endpoint(**self.request.params)
+  File "C:\Users\khokha\odoo16latest\server\odoo\http.py", line 698, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "C:\Users\khokha\odoo16latest\server\odoo\addons\web\controllers\home.py", line 32, in index
+    if request.session.uid and not is_user_internal(request.session.uid):
+  File "C:\Users\khokha\odoo16latest\server\odoo\addons\web\controllers\utils.py", line 204, in is_user_internal
+    return request.env['res.users'].browse(uid)._is_internal()
+TypeError: 'NoneType' object is not subscriptable
+2022-12-10 16:53:50,598 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 16:53:50] "GET / HTTP/1.1" 500 - 1 0.003 0.067
+2022-12-10 18:05:01,300 11820 INFO odoo16 odoo.modules.loading: loading 1 modules... 
+2022-12-10 18:05:01,328 11820 INFO odoo16 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2022-12-10 18:05:01,340 11820 WARNING odoo16 odoo.modules.graph: module hospital: not installable, skipped 
+2022-12-10 18:05:01,345 11820 INFO odoo16 odoo.modules.loading: loading 8 modules... 
+2022-12-10 18:05:01,499 11820 INFO odoo16 odoo.modules.loading: 8 modules loaded in 0.15s, 0 queries (+0 extra) 
+2022-12-10 18:05:01,546 11820 ERROR odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['hospital'] 
+2022-12-10 18:05:01,547 11820 INFO odoo16 odoo.modules.loading: Modules loaded. 
+2022-12-10 18:05:01,550 11820 INFO odoo16 odoo.modules.registry: Registry loaded in 0.313s 
+2022-12-10 18:05:01,551 11820 INFO odoo16 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-12-10 18:05:01,657 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:01] "GET / HTTP/1.1" 303 - 19 0.039 0.387
+2022-12-10 18:05:02,863 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:02] "GET /web HTTP/1.1" 200 - 81 0.062 1.124
+2022-12-10 18:05:05,153 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:05] "GET /web/assets/193-7eb80f5/web.assets_common.min.css HTTP/1.1" 200 - 4 0.003 1.884
+2022-12-10 18:05:05,332 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:05] "GET /web/webclient/load_menus/b78f9f22518b994512836b6f7663cb2b228ff06297cd5ff7b99385c654df9b3c HTTP/1.1" 200 - 1 0.002 2.004
+2022-12-10 18:05:05,345 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:05] "GET /web/assets/194-1651284/web.assets_backend.min.css HTTP/1.1" 200 - 4 0.008 2.071
+2022-12-10 18:05:05,346 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:05] "GET /web/assets/195-7eb80f5/web.assets_common.min.js HTTP/1.1" 200 - 4 0.012 2.068
+2022-12-10 18:05:05,346 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:05] "GET /web/assets/196-1651284/web.assets_backend.min.js HTTP/1.1" 200 - 4 0.007 2.072
+2022-12-10 18:05:05,347 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:05] "GET /web/assets/197-9bd260e/web.assets_backend_prod_only.min.js HTTP/1.1" 200 - 4 0.011 2.068
+2022-12-10 18:05:08,094 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:08,110 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 3 0.016 0.000
+2022-12-10 18:05:08,350 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.001 0.003
+2022-12-10 18:05:08,451 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /bus/websocket_worker_bundle HTTP/1.1" 200 - 5 0.005 0.014
+2022-12-10 18:05:08,497 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "POST /web/action/load HTTP/1.1" 200 - 12 0.046 0.018
+2022-12-10 18:05:08,751 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:08,804 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-10 18:05:08,842 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.031
+2022-12-10 18:05:08,854 11820 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-12-10 18:05:08,913 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 15 0.044 0.033
+2022-12-10 18:05:08,913 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "GET /web/image/res.company/1/favicon HTTP/1.1" 200 - 10 0.054 0.060
+2022-12-10 18:05:08,967 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:08] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 44 0.080 0.086
+2022-12-10 18:05:09,240 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.004 0.001
+2022-12-10 18:05:09,320 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.009
+2022-12-10 18:05:09,361 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 41 0.036 0.021
+2022-12-10 18:05:09,564 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.009 0.007
+2022-12-10 18:05:09,876 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-10 18:05:09,877 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-10 18:05:09,880 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 200 - 0 0.000 0.009
+2022-12-10 18:05:09,883 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - 0 0.000 0.010
+2022-12-10 18:05:09,884 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - 0 0.000 0.009
+2022-12-10 18:05:09,998 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:09] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-10 18:05:10,205 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.016
+2022-12-10 18:05:10,205 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.016
+2022-12-10 18:05:10,205 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.016
+2022-12-10 18:05:10,215 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /project/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.010
+2022-12-10 18:05:10,219 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-10 18:05:10,338 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.032
+2022-12-10 18:05:10,517 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:10,517 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /hospital/static/description/icon.png HTTP/1.1" 404 - 2 0.000 0.000
+2022-12-10 18:05:10,533 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.015 0.001
+2022-12-10 18:05:10,555 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-10 18:05:10,592 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-10 18:05:10,682 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:10] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-10 18:05:16,391 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,391 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,391 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,391 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,406 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - 0 0.000 0.016
+2022-12-10 18:05:16,409 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /mail/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.018
+2022-12-10 18:05:16,720 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,720 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /base/static/img/icons/social.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,720 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,720 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,720 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:16,720 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:16] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:19,118 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-10 18:05:19,118 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-10 18:05:19,118 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /repair/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:19,118 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-10 18:05:19,118 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /survey/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-10 18:05:19,118 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:19,454 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - 0 0.000 0.016
+2022-12-10 18:05:19,454 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /note/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.016
+2022-12-10 18:05:19,454 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:19,454 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:19,454 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:19,470 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:19,767 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:19,767 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:19] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2022-12-10 18:05:26,901 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:26] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 3 0.001 0.007
+2022-12-10 18:05:27,159 11820 WARNING odoo16 odoo.modules.module: module hospital: module not found 
+2022-12-10 18:05:27,263 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:27] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 8 0.019 0.086
+2022-12-10 18:05:27,298 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:27] "POST /web/dataset/call_kw/ir.module.module.dependency/read HTTP/1.1" 200 - 4 0.009 0.008
+2022-12-10 18:05:27,883 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:27] "GET /web/bundle/web_editor.assets_wysiwyg?lang=en_US&debug=1 HTTP/1.1" 200 - 11 0.009 0.199
+2022-12-10 18:05:27,930 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:27] "GET /web/assets/198-3c74e50/web_editor.assets_wysiwyg.min.css HTTP/1.1" 200 - 4 0.002 0.005
+2022-12-10 18:05:28,204 11820 INFO odoo16 werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:28] "GET /web/assets/199-3c74e50/web_editor.assets_wysiwyg.min.js HTTP/1.1" 200 - 4 0.000 0.000
+2022-12-10 18:05:28,271 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:28] "GET /base/static/src/css/description.css HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-10 18:05:28,628 11820 INFO ? werkzeug: 127.0.0.1 - - [10/Dec/2022 18:05:28] "GET /web/static/img/placeholder.png HTTP/1.1" 200 - 0 0.000 0.008

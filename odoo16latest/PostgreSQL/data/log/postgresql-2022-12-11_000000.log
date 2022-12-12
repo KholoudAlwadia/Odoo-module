@@ -1,0 +1,10 @@
+2022-12-11 11:28:13.721 +03 [8076] ERROR:  could not serialize access due to concurrent delete
+2022-12-11 11:28:13.721 +03 [8076] STATEMENT:  DELETE FROM ir_attachment WHERE id IN (191)
+2022-12-11 11:55:58.844 +03 [15832] ERROR:  could not serialize access due to concurrent delete
+2022-12-11 11:55:58.844 +03 [15832] STATEMENT:  DELETE FROM ir_attachment WHERE id IN (191)
+2022-12-12 19:48:22.674 +03 [17416] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-12-12 19:48:22.681 +03 [10432] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-12-12 19:48:22.682 +03 [16592] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

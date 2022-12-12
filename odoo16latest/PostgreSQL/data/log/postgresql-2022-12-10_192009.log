@@ -1,0 +1,5 @@
+2022-12-10 19:20:10.005 +03 [1892] LOG:  database system was shut down at 2022-12-10 19:20:00 +03
+2022-12-10 19:20:10.061 +03 [4296] LOG:  database system is ready to accept connections
+2022-12-10 19:53:36.936 +03 [9336] FATAL:  database "odoo16" does not exist
+2022-12-10 22:33:12.892 +03 [18328] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
