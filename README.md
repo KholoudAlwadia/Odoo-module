@@ -1,4 +1,4 @@
-# Odoo- Costomization module
+# Odoo- Customization module
 
 
 ## Hospital patient Management module
@@ -6,39 +6,41 @@
 
 
 
-Self learning project made for learn purpse.
-- Using python language 
-- xml for User-Interface menue , form 
-- design User-Interface for the Game Using Python pygame 
+Self-learning project made for learning purposes.
+- Using python language. 
+- XML for User-Interface menu, form. 
+- design a User-Interface for the Game Using Python pygame. 
 
 
 ## Requirments
 
-- pycharm or any editor
-- Install Python in your pc
-- Install odoo community  
+- Pycharm or any editor.
+- Install Python on your pc.
+- Install Odoo community.  
 
 
 
 ## Installation
 
-- First install [VScode](https://code.visualstudio.com/download).
+- First, install [VScode](https://code.visualstudio.com/download).
 - Install [Python](https://www.python.org/downloads/).
 - To install [odoo](https://www.odoo.com/page/download).
-- For installation follow the step in this vedio [installation on windos](https://youtu.be/XBR_hcwY0HE)
-
-## What have been done in Hospital module
-
-- Create patient menue in form and tree structre.
-- Create sepcialize search and filter for the medule.
-- Add sequence number for ever entered patient record.
-- Inheret spcial model from exsisting module to costumized module.
+- For installation follow the step in this video [installation on windos](https://youtu.be/XBR_hcwY0HE).
 
 
+
+## What had done in the Hospital module
+
+- Create a patient menu in form and tree structure.
+- Create a spechalize search and filter for the module.
+- Add sequence number for every entered patient record.
+- Inheret special model from existing module to customized module.
+
+## Note
+
+custom models file path: (Odoo-module/odoo16latest/server/custom/hospital/)
 
 ## ScreenShots 
-
-
 
 
 https://user-images.githubusercontent.com/53967051/207137396-7e138872-2c3b-4960-9810-92e9ea6e64f6.mp4
