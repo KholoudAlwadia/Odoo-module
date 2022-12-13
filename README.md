@@ -55,11 +55,15 @@ custom models file path: (Odoo-module/odoo16latest/server/custom/hospital/)
 - Create compute field and it's function.
 - Track Field value changes.
 - Add constrains for field in form. 
+- Create new parent menu call Appointment.
+- Add field in Appointment form related with field in Patient form.
 
 
 
 ## ScreenShots 
 ##Day1
+
+
 https://user-images.githubusercontent.com/53967051/207138933-96b98644-7029-46d4-b634-0c4e93d18de8.mp4
 
 
