@@ -16,6 +16,7 @@
     # data files always loaded at installation
     'data': [
         'view/patientview.xml',
+        'view/appointment.xml',
         'data/sequence.xml',
         'security/ir.model.access.csv'
     ],

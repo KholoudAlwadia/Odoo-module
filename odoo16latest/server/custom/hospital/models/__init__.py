@@ -1,1 +1,1 @@
-from . import Patient
+from . import Patient, appointment

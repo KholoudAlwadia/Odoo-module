@@ -39,7 +39,7 @@
             <form string="Patients">
                 <sheet>
                     <field name="image" widget="image" class="oe_left oe_avatar"/>
-                     <div class="oe_left oe_title"> <!-- To write the name  in record title -->
+                     <div class="oe_title"> <!-- To write the name  in record title -->
                     <h1>
                         <field name="patient_name"/>
                     </h1>

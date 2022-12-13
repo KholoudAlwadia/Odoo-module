@@ -2,6 +2,7 @@
 
 
 from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 # Inherit model from existing model
@@ -22,7 +23,13 @@ class HospitalPatient(models.Model):
     _description = 'Patient Record'
     _rec_name = 'patient_name'  # To Write patient name in record rather than field name and id number in record title
 
-    @api.depends('patient_age')
+    @api.constrains('patient_age')  # method to set constrains depend on condition
+    def check_age(self):
+        for rec in self:
+            if rec.patient_age < 1:
+                raise ValidationError(_('The Age must be Greater than or equal  1'))
+
+    @api.depends('patient_age')  # method to set value depend on condition
     def set_age_group(self):
         for rec in self:
             if rec.patient_age:
@@ -38,8 +45,10 @@ class HospitalPatient(models.Model):
     name_seq = fields.Char(string='Order Reference', required=True, copy=False,
                            readonly=True, index=True,
                            default=lambda self: _('New'))  # To add sequence number foe each patient record
+
     gender = fields.Selection([('male', 'Male'), ('female', 'Female')], default='female', string='Gender')
-    age_group = fields.Selection([('major', 'Major'), ('minor', 'Minor')], string='Age Group', compute='set_age_group')
+    age_group = fields.Selection([('major', 'Major'), ('minor', 'Minor'), ], string='Age Group', compute='set_age_group'
+                                 , store=True)
 
     # To create new sequence number for each patient record
     @api.model
